@@ -5,10 +5,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>NPM Package Manager</title>
-
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-		<script src="semantic/dist/semantic.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		
 
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,10 +18,50 @@
 		<![endif]-->
 	</head>
 	<body>
-		<div id="visualization"></div>
+		<div class="top-header">
+			<img src="assets/images/npm-logo.png" class="ui image">
+		</div>
+		<div class="ui grid container">
+				<div class="four wide column">
+					<div class="ui left fixed">
+						<div class="ui secondary vertical pointing menu">
+				      	  <a class="active item" data-tab="create">Create a Project </a>
+				      	  <a class="item"  data-tab="manage">Manage Projects</a>
+				      	</div>
+				    </div>
+				</div>
+				<div class="twelve wide column">
+					<div class="ui tab active" data-tab="create">
+						<div class="text container">
+							
+
+							<h2 class="ui dividing header">New Project </h2>
+						</div>
+					</div>
+					<div class="ui tab " data-tab="manage">
+						<div class="text container">
+							
+							<h2 class="ui dividing header ">Manage Projects </h2>
+						</div>
+					</div>
+
+				</div>
+					
+		
+		</div>
+		
+		
 		<script type="text/javascript" src="index.js"></script>
-		<!-- jQuery -->
-		<script src="//code.jquery.com/jquery.js"></script>
-		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+		<!-- Insert this line above script imports  -->
+		<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+			<!-- jQuery -->
+		<script type="text/javascript" src="assets/js/jquery.js"></script>
+		<script src="semantic/dist/semantic.min.js"></script>
+		
+
+		<script type="text/javascript" src="assets/js/index.js"></script>
+		<!-- Insert this line after script imports -->
+		<script>if (window.module) module = window.module;</script>
 	</body>
 </html>

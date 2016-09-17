@@ -1,0 +1,15 @@
+body{
+	font-family: Open Sans;
+}
+
+.top-header{
+	background: #1D4E69;
+	min-height: 30px;
+
+	text-align: center;
+}
+.top-header img{
+	max-width: 20% !important;
+	padding: 20px; 
+	margin: auto;
+}
